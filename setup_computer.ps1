@@ -29,6 +29,7 @@ $optionalApplications =
     "WinDirStat.WinDirStat",
     "Audacity.Audacity",
     "CrystalDewWorld.CrystalDiskInfo",
+    "CrystalDewWorld.CrystalDiskMark",
     "Gyan.FFmpeg",
     "ImageMagick.ImageMagick",
     "zyedidia.micro",
