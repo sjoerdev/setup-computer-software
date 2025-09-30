@@ -1,8 +1,5 @@
 # setup computer enviroment script
 
-# require admin power
-#Requires -RunAsAdministrator
-
 $primaryApplications =
 @(
     "Mozilla.Firefox",
