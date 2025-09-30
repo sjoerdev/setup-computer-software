@@ -59,11 +59,11 @@ function Install-Packages($packages)
         {
             if ($name -eq "Microsoft.VisualStudio.2022.BuildTools")
             {
-                winget install --id=$name --silent --accept-package-agreements --accept-source-agreements --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
+                winget install $name --silent --accept-package-agreements --accept-source-agreements --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
             }
             else
             {
-                winget install --id=$name --silent --accept-package-agreements --accept-source-agreements
+                winget install $name --silent --accept-package-agreements --accept-source-agreements
             }
         }
         catch
