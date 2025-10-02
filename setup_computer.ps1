@@ -30,7 +30,8 @@ $optionalApplications =
     "Gyan.FFmpeg",
     "ImageMagick.ImageMagick",
     "zyedidia.micro",
-    "winget install Microsoft.Edit"
+    "winget install Microsoft.Edit",
+    "MartiCliment.UniGetUI"
 )
 
 $primaryToolchains =
