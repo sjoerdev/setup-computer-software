@@ -31,7 +31,8 @@ $optionalApplications =
     "ImageMagick.ImageMagick",
     "zyedidia.micro",
     "winget install Microsoft.Edit",
-    "MartiCliment.UniGetUI"
+    "MartiCliment.UniGetUI",
+    "lostindark.DriverStoreExplorer"
 )
 
 $primaryToolchains =
