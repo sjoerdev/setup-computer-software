@@ -52,6 +52,15 @@ $optionalToolchains =
     "xmake"
 )
 
+$wingetArguments = 
+@(
+    "--silent",
+    "--accept-package-agreements",
+    "--accept-source-agreements",
+    "--disable-interactivity",
+    "--force"
+)
+
 function Install-Packages($packages)
 {
     foreach ($name in $packages)
@@ -61,11 +70,11 @@ function Install-Packages($packages)
         {
             if ($name -eq "Microsoft.VisualStudio.2022.BuildTools")
             {
-                winget install $name --silent --accept-package-agreements --accept-source-agreements --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
+                winget install $name @wingetArguments --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
             }
             else
             {
-                winget install $name --silent --accept-package-agreements --accept-source-agreements
+                winget install $name @wingetArguments
             }
         }
         catch
